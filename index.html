@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome - Landing Page.</title>
-    <style>
-        body {
-            background-color: #1e1e1e; /* Dark background */
-            color: white; /* Default text color */
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-
-        .gradient-text {
-            font-size: 3em; /* Adjust as needed */
-            font-weight: bold;
-            background: linear-gradient(90deg, #007bff, #8a2be2, #ff6b6b); /* Blue to Violet to Red */
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class="gradient-text">Hello, This is Team - Neo Athelios.</h1>
+    <div>
+        <h1 class="gradient-text">Hello, This is Team - Neo Athelios.</h1>
+    </div>
+    <div>
+        <h2 class="gradient-text">Welcome To Our Profile Page!</h2>
+    </div>
+    <div class="button-container">
+        <a href="https://www.youtube.com/@NeoAthelios" class="icon-button" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon" class="social-icon" style="width: 30px; height: 30px;"><pre>  YouTube  </pre>
+        </a>
+        <a href="mailto:neoathelios@gmail.com" class="icon-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email Icon" class="social-icon" style="width: 30px; height: 30px;"><pre>  Email  </pre>
+        </a>
+        <a href="https://github.com/neo-athelios" class="icon-button" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon" class="social-icon" style="width: 30px; height: 30px;"><pre>  GitHub  </pre>
+        </a>
+    </div>
+
+    <div id="popup">
+        <div id="popup-content">
+            <h2>New Updates Coming Soon!</h2>
+            <p>Our page is getting a fresh update soon, where you'll be able to see our recent work and other information.</p>
+            <button id="popup-close" onclick="closePopup()">Okay!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
